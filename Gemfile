@@ -27,6 +27,36 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# locale
+gem 'rails-i18n', '~> 5.1.0'
+
+# setting
+gem 'config', '~> 1.7.0'
+
+# exception_notification
+gem 'exception_notification', '~> 4.2.2'
+
+# devise
+gem 'devise', '~> 4.4.3'
+gem 'devise-i18n', '~> 1.6.4'
+
+# paging
+gem 'kaminari', '~> 1.1.1'
+gem 'kaminari-i18n', '~> 0.5.0'
+
+# enum
+gem 'enumerize', '~> 2.2.2'
+
+# seed
+gem 'seed-fu', '~> 2.3.9'
+
+# file upload
+gem 'carrierwave', '~> 1.2.3'
+gem 'rmagick', '~> 2.16.0'
+
+# icon
+gem 'font-awesome-rails', '~> 4.7.0.3'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -38,7 +68,21 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  #gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug',                     '~> 10.0.2'
+  gem 'pry-rails',                  '~> 0.3.6'
+  gem 'pry-byebug',                 '~> 3.6.0'
+  gem 'brakeman',                   '~> 4.3.1',  require: false
+  gem 'rubocop',                    '~> 0.58.1', require: false
+  gem 'scss_lint',                  '~> 0.57.0', require: false
+  gem 'rails-controller-testing',   '~> 1.0.1'
+  gem 'minitest-power_assert',      '~> 0.3.0'
+  gem 'minitest-slow_test',         '~> 0.2.0'
+  gem 'minitest-stub_any_instance', '~> 1.0.2'
+  gem 'timecop',                    '~> 0.9.1'
+  gem 'factory_bot_rails',          '~> 4.10.0'
+  gem 'simplecov',                  '~> 0.16.1', require: false
+  gem 'simplecov-console',          '~> 0.4.2',  require: false
 end
 
 group :development do
@@ -46,8 +90,12 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring',                '~> 2.0.2'
+  gem 'spring-watcher-listen', '~> 2.0.1'
+  gem 'better_errors',         '~> 2.4.0'
+  gem 'binding_of_caller',     '~> 0.8.0'
+  gem 'bullet',                '~> 5.7.5'
+  gem 'letter_opener_web',     '~> 1.3.4'
 end
 
 group :test do
@@ -60,3 +108,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
