@@ -1,0 +1,66 @@
+Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/development.rb
+    - config/environments/production.rb
+    - config/routes.rb
+    - test/**/*
+
+Metrics/ClassLength:
+  Max: 150
+  Exclude:
+    - test/**/*
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - config/initializers/devise.rb
+    - config/deploy.rb
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/MixinUsage:
+  Exclude:
+    - bin/setup
+    - bin/update
+
+Rails:
+  Enabled: true
+
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - coverage/**/*
+    - config/initializers/exception_notification.rb
+    - db/schema.rb
+    - db/migrate/*
+    - node_modules/**/*
+    - tmp/**/*
+    - vendor/bundle/**/*
+
+HandleExceptions:
+  Exclude:
+    - config/unicorn/*
+
+
