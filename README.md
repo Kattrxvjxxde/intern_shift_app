@@ -1,24 +1,15 @@
-# README
+## アプリの初回起動まで
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. dockerをインストールする．
 
-Things you may want to cover:
+2. `git clone git@github.com:Kattrxvjxxde/shift_app.git` を実行してリポジトリをクローンする．
 
-* Ruby version
+3. クローンしたディレクトリで， `docker-compose build` を実行する．
 
-* System dependencies
+4. 続けて， 以下のコマンドによりDBを作成する．
+ ```
+ docker-compose run --rm web bundle exec rails db:create
+ docker-compose run --rm web bundle exec rails db:migrate
+ ```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. `docker-compose up` を実行し， `localhost:3000` にアクセスする．
