@@ -1,0 +1,10 @@
+// top
+
+.top__image {
+  background: image-url('top.jpg');
+  background-position: center center;
+}
+
+.top__image_lighter {
+  background-color: $image_lighter;
+}

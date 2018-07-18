@@ -1,6 +1,9 @@
 scss_files: 'app/assets/stylesheets/**/*.scss'
 
 linters:
+  NameFormat:
+    enabled: false
+
   SelectorFormat:
     enabled: false
 

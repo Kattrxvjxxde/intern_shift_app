@@ -4,6 +4,12 @@
 @import 'font-awesome';
 @import 'bootstrap';
 
+// definitions
+@import 'variables'; // 変数
+
 // laytout
 @import 'general';
 @import 'header';
+
+// contents
+@import 'top';
