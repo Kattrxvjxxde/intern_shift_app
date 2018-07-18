@@ -57,6 +57,10 @@ gem 'rmagick', '~> 2.16.0'
 # icon
 gem 'font-awesome-rails', '~> 4.7.0.3'
 
+# bootstrap
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails', '~> 4.3.3'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
